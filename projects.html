@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Proyek - Portofolio Digital Marketing & n8n Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-100 font-mono">
+
+    <!-- Main Container -->
+    <div class="w-full h-full min-h-screen">
+
+        <!-- Header -->
+        <header class="flex items-center justify-between p-4 bg-white border-b-4 border-black">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-code text-2xl"></i>
+                <span class="font-bold text-xl">Nama Anda</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="index.html#home" class="p-2 font-bold hover:bg-yellow-200">Home</a>
+                <a href="index.html#skills" class="p-2 font-bold hover:bg-yellow-200">Skills</a>
+                <a href="index.html#projects" class="p-2 font-bold hover:bg-yellow-200">Projects</a>
+                <a href="index.html#blog" class="p-2 font-bold hover:bg-yellow-200">Blog</a>
+                <a href="index.html#contact" class="p-2 font-bold hover:bg-yellow-200">Contact</a>
+            </nav>
+            <a href="index.html" class="md:hidden p-3 border-2 border-black bg-yellow-300 shadow-neo-sm">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-4 md:p-8">
+
+            <!-- All Projects Section -->
+            <section id="all-projects" class="mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center">Semua Proyek</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+                    <div class="card-neo">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4"></div>
+                        <h4 class="font-bold text-lg mb-2">Otomatisasi Lead Nurturing</h4>
+                        <p class="text-sm mb-4">
+                            Menciptakan alur kerja n8n untuk mengotomatisasi pengiriman email dan notifikasi.
+                        </p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="card-neo">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4"></div>
+                        <h4 class="font-bold text-lg mb-2">Integrasi Laporan Pemasaran</h4>
+                        <p class="text-sm mb-4">
+                            Menghubungkan Google Analytics, Facebook Ads, dan CRM untuk dasbor laporan otomatis.
+                        </p>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="card-neo">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4"></div>
+                        <h4 class="font-bold text-lg mb-2">Sistem Notifikasi Slack</h4>
+                        <p class="text-sm mb-4">
+                            Membuat sistem notifikasi otomatis di Slack untuk tim sales.
+                        </p>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="card-neo">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4"></div>
+                        <h4 class="font-bold text-lg mb-2">Proyek Tambahan 1</h4>
+                        <p class="text-sm mb-4">
+                            Deskripsi singkat tentang proyek tambahan pertama Anda.
+                        </p>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="card-neo">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4"></div>
+                        <h4 class="font-bold text-lg mb-2">Proyek Tambahan 2</h4>
+                        <p class="text-sm mb-4">
+                            Deskripsi singkat tentang proyek tambahan kedua Anda.
+                        </p>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="card-neo">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4"></div>
+                        <h4 class="font-bold text-lg mb-2">Proyek Tambahan 3</h4>
+                        <p class="text-sm mb-4">
+                            Deskripsi singkat tentang proyek tambahan ketiga Anda.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="p-6 bg-white border-t-4 border-black flex flex-col sm:flex-row items-center justify-between">
+            <p class="text-sm font-bold mb-4 sm:mb-0">&copy; 2024 Nama Anda</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'neo-sm': '2px 2px 0px #000',
+                        'neo-md': '4px 4px 0px #000',
+                        'neo-lg': '8px 8px 0px #000',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

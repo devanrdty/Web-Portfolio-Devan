@@ -1,1 +1,15 @@
-/* Add styles here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.hamburger-icon.hidden, .close-icon.hidden {
+    display: none;
+}

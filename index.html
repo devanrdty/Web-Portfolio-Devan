@@ -1,14 +1,243 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Digital Marketing & n8n Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+<body class="bg-stone-100 font-mono">
+
+    <!-- Main Container -->
+    <div class="w-full h-full min-h-screen">
+
+        <!-- Header -->
+        <header class="flex items-center justify-between p-4 bg-white border-b-4 border-black">
+            <a href="/" class="flex items-center space-x-2">
+                <i class="fa-solid fa-code text-2xl"></i>
+                <span class="font-bold text-xl">Nama Anda</span>
+            </a>
+            <button id="mobile-menu-button" class="md:hidden p-2 text-2xl z-50 border-2 border-black bg-yellow-300 shadow-neo-sm active:shadow-none active:translate-x-0.5 active:translate-y-0.5">
+                <i class="fa-solid fa-bars hamburger-icon"></i>
+                <i class="fa-solid fa-times close-icon hidden"></i>
+            </button>
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="/#home" class="p-2 font-bold hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-1">Home</a>
+                <a href="/#skills" class="p-2 font-bold hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-1">Skills</a>
+                <a href="/#projects" class="p-2 font-bold hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-1">Projects</a>
+                <a href="/blog.html" class="p-2 font-bold hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-1">Blog</a>
+                <a href="/#contact" class="p-2 font-bold hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-1">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-4 md:p-8">
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-3/4 h-full bg-white z-40 p-4 border-r-4 border-black">
+                <nav class="flex flex-col space-y-4 mt-16">
+                    <a href="/#home" class="p-3 bg-yellow-300 border-2 border-black font-bold shadow-neo-sm text-center">Home</a>
+                    <a href="/#skills" class="p-3 bg-yellow-300 border-2 border-black font-bold shadow-neo-sm text-center">Skills</a>
+                    <a href="/#projects" class="p-3 bg-yellow-300 border-2 border-black font-bold shadow-neo-sm text-center">Projects</a>
+                    <a href="/blog.html" class="p-3 bg-yellow-300 border-2 border-black font-bold shadow-neo-sm text-center">Blog</a>
+                    <a href="/#contact" class="p-3 bg-yellow-300 border-2 border-black font-bold shadow-neo-sm text-center">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Hero Section -->
+            <section id="home" class="mb-12 p-6 sm:p-8 bg-lime-300 border-4 border-black shadow-neo-lg flex flex-col items-center text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-32 h-32 bg-gray-200 border-4 border-black shadow-neo-md overflow-hidden">
+                        <img src="https://placehold.co/128x128/1a1a1a/fff?text=FOTO" alt="Foto Profil" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-extrabold mb-2 text-black">
+                    Nama Anda
+                </h1>
+                <p class="text-xl font-bold text-black mb-6">
+                    Digital Marketing & n8n Developer
+                </p>
+                <p class="max-w-xl mx-auto mb-8 text-gray-800 font-medium">
+                    Saya membantu bisnis meningkatkan efisiensi dan ROI melalui solusi otomatisasi pemasaran yang cerdas dan terukur.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#projects" class="py-3 px-6 bg-yellow-300 font-bold hover:bg-yellow-400 transition-transform duration-200 hover:-translate-y-1 border-2 border-black">Lihat Portofolio</a>
+                    <a href="#contact" class="py-3 px-6 bg-white font-bold hover:bg-gray-100 transition-transform duration-200 hover:-translate-y-1 border-2 border-black">Hubungi Saya</a>
+                </div>
+            </section>
+            
+            <!-- Skills Section -->
+            <section id="skills" class="mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center">Keahlian Saya</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1">
+                        <h4 class="font-bold text-lg mb-2">n8n Automation</h4>
+                        <p class="text-sm text-gray-700">Ahli dalam membangun alur kerja kompleks untuk mengotomatisasi tugas berulang.</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1">
+                        <h4 class="font-bold text-lg mb-2">Digital Marketing</h4>
+                        <p class="text-sm text-gray-700">Berpengalaman dalam strategi SEO, SEM, dan manajemen kampanye.</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1">
+                        <h4 class="font-bold text-lg mb-2">Integrasi API</h4>
+                        <p class="text-sm text-gray-700">Mampu mengintegrasikan berbagai aplikasi melalui API untuk otomatisasi yang mulus.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Section -->
+            <section id="projects" class="mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center">Proyek & Kasus Studi</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Project Card 1 -->
+                    <div class="project-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                         data-title="Otomatisasi Lead Nurturing"
+                         data-image="https://placehold.co/600x400/a78bfa/1a1a1a?text=Workflow"
+                         data-description="Alur kerja n8n ini secara otomatis menangani seluruh proses pemeliharaan prospek (lead nurturing). Ketika prospek baru masuk dari formulir situs web, sistem akan memvalidasi data, mengirimkan serangkaian email sambutan yang dipersonalisasi, dan menjadwalkan tindak lanjut. Jika prospek menunjukkan minat (misalnya, mengklik tautan), sistem akan secara otomatis memberi tahu tim penjualan melalui Slack, meningkatkan waktu respons dan tingkat konversi."
+                         data-tech="n8n, SendGrid, Slack, REST API">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/a78bfa/1a1a1a?text=Workflow" alt="Thumbnail Proyek 1" class="w-full h-full object-cover"></div>
+                        <h4 class="font-bold text-lg mb-2 pointer-events-none">Otomatisasi Lead Nurturing</h4>
+                        <p class="text-sm mb-4 text-gray-700 pointer-events-none">Menciptakan alur kerja n8n untuk mengotomatisasi pengiriman email dan notifikasi.</p>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                         data-title="Integrasi Laporan Pemasaran"
+                         data-image="https://placehold.co/600x400/f97316/1a1a1a?text=Dashboard"
+                         data-description="Proyek ini mengotomatiskan proses pelaporan pemasaran yang memakan waktu. Menggunakan n8n, data dari berbagai sumber (Google Analytics, Facebook Ads, Google Ads) ditarik setiap hari, diproses, dan digabungkan menjadi satu format yang bersih. Data yang sudah jadi kemudian dikirim ke Google Data Studio, memperbarui dasbor laporan secara real-time. Ini menghilangkan kebutuhan untuk kompilasi data manual dan memberikan wawasan instan tentang kinerja kampanye."
+                         data-tech="n8n, Google Analytics API, Facebook Marketing API, Google Data Studio">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/f97316/1a1a1a?text=Dashboard" alt="Thumbnail Proyek 2" class="w-full h-full object-cover"></div>
+                        <h4 class="font-bold text-lg mb-2 pointer-events-none">Integrasi Laporan Pemasaran</h4>
+                        <p class="text-sm mb-4 text-gray-700 pointer-events-none">Menghubungkan Google Analytics, Facebook Ads, dan CRM untuk dasbor laporan otomatis.</p>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                         data-title="Sistem Notifikasi Slack"
+                         data-image="https://placehold.co/600x400/14b8a6/1a1a1a?text=Slack+Alert"
+                         data-description="Untuk mempercepat respons tim penjualan, sistem ini dibuat menggunakan n8n untuk secara instan mengirimkan notifikasi ke saluran Slack khusus setiap kali ada prospek baru yang masuk melalui formulir kontak situs web atau demo. Notifikasi ini mencakup detail penting dari prospek, memungkinkan perwakilan penjualan untuk segera menindaklanjuti saat minat prospek masih tinggi. Sistem ini secara signifikan mengurangi waktu respons tim."
+                         data-tech="n8n, Slack API, Webhooks">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/14b8a6/1a1a1a?text=Slack+Alert" alt="Thumbnail Proyek 3" class="w-full h-full object-cover"></div>
+                        <h4 class="font-bold text-lg mb-2 pointer-events-none">Sistem Notifikasi Slack</h4>
+                        <p class="text-sm mb-4 text-gray-700 pointer-events-none">Membuat sistem notifikasi otomatis di Slack untuk tim sales.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="projects.html" class="py-3 px-6 bg-yellow-300 font-bold hover:bg-yellow-400 transition-transform duration-200 hover:-translate-y-1 border-2 border-black">Lihat Semua Proyek</a>
+                </div>
+            </section>
+            
+            <!-- Blog Section -->
+            <section id="blog" class="mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center">Wawasan & Blog</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Blog Card 1 -->
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                         data-title="Strategi Otomasi Pemasaran 2024"
+                         data-date="27 Sep 2024"
+                         data-content="Di tahun 2024, otomatisasi pemasaran bukan lagi sekadar mengirim email massal. Ini tentang menciptakan perjalanan pelanggan yang sangat personal dan relevan. Tren utama yang perlu diperhatikan adalah penggunaan AI untuk segmentasi dinamis, di mana pelanggan dikelompokkan berdasarkan perilaku real-time, bukan hanya demografi. Selain itu, otomatisasi omni-channel menjadi standar. Alur kerja Anda harus dapat menjangkau pelanggan melalui email, SMS, notifikasi push, dan bahkan iklan bertarget secara terkoordinasi. Kuncinya adalah memberikan pesan yang tepat, di waktu yang tepat, dan di saluran yang paling disukai pelanggan.">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <h4 class="font-bold text-lg mb-1 pointer-events-none">Strategi Otomasi Pemasaran 2024</h4>
+                        <p class="text-xs text-gray-600 mb-2 pointer-events-none">27 Sep 2024</p>
+                        <p class="text-sm text-gray-700 pointer-events-none">Pelajari tren terbaru dalam otomatisasi pemasaran untuk meningkatkan efisiensi.</p>
+                    </div>
+                    <!-- Blog Card 2 -->
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                         data-title="Panduan Memulai N8N untuk Pemula"
+                         data-date="15 Sep 2024"
+                         data-content="N8N (diucapkan 'n-eight-n') adalah alat otomatisasi alur kerja sumber terbuka yang powerful. Untuk memulainya, Anda tidak perlu menjadi seorang programmer. Pertama, pahami tiga konsep inti: Node, Connection, dan Workflow. **Node** adalah blok bangunan (misalnya, 'Baca Google Sheet', 'Kirim Email'). **Connection** adalah bagaimana node-node tersebut dihubungkan. **Workflow** adalah kanvas tempat Anda menyusun node-node ini. Mulailah dengan proyek sederhana: buat alur kerja yang secara otomatis mengirimkan pesan 'Selamat Pagi' ke saluran Slack Anda setiap hari jam 8 pagi. Ini akan mengajarkan Anda dasar-dasar pemicu (trigger) dan tindakan (action) di n8n.">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <h4 class="font-bold text-lg mb-1 pointer-events-none">Panduan Memulai N8N untuk Pemula</h4>
+                        <p class="text-xs text-gray-600 mb-2 pointer-events-none">15 Sep 2024</p>
+                        <p class="text-sm text-gray-700 pointer-events-none">Langkah-langkah praktis untuk membangun alur kerja otomatisasi pertama Anda.</p>
+                    </div>
+                    <!-- Blog Card 3 -->
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                         data-title="Studi Kasus: Otomatisasi Penjualan"
+                         data-date="5 Sep 2024"
+                         data-content="Sebuah perusahaan SaaS B2B mengalami kesulitan dalam menindaklanjuti prospek demo dengan cepat, yang menyebabkan tingkat konversi rendah. Solusinya adalah alur kerja n8n yang terintegrasi dengan Calendly, HubSpot, dan Slack. Ketika seorang prospek menjadwalkan demo via Calendly, n8n secara instan membuat kontak baru di HubSpot, memberinya tag 'Demo Dijadwalkan'. Secara bersamaan, notifikasi dikirim ke saluran Slack tim penjualan dengan detail prospek dan tautan ke profil HubSpot mereka. Hasilnya? Waktu respons berkurang dari beberapa jam menjadi beberapa menit, dan tingkat konversi demo-ke-pelanggan meningkat sebesar 30% dalam tiga bulan.">
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <h4 class="font-bold text-lg mb-1 pointer-events-none">Studi Kasus: Otomatisasi Penjualan</h4>
+                        <p class="text-xs text-gray-600 mb-2 pointer-events-none">5 Sep 2024</p>
+                        <p class="text-sm text-gray-700 pointer-events-none">Bagaimana otomatisasi n8n dapat meningkatkan konversi dan efisiensi.</p>
+                    </div>
+                </div>
+                 <div class="text-center mt-8">
+                    <a href="blog.html" class="py-3 px-6 bg-yellow-300 font-bold hover:bg-yellow-400 transition-transform duration-200 hover:-translate-y-1 border-2 border-black">Lihat Semua Postingan</a>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center">Hubungi Saya</h2>
+                <div class="max-w-lg mx-auto">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-bold mb-1">Nama</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border-2 border-black bg-white focus:outline-none focus:bg-gray-50">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-bold mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border-2 border-black bg-white focus:outline-none focus:bg-gray-50">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-bold mb-1">Pesan</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 border-2 border-black bg-white focus:outline-none focus:bg-gray-50"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 px-6 bg-yellow-300 font-bold hover:bg-yellow-400 transition-transform duration-200 hover:-translate-y-1 border-2 border-black">Kirim Pesan</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="p-6 bg-white border-t-4 border-black flex flex-col sm:flex-row items-center justify-between">
+            <p class="text-sm font-bold mb-4 sm:mb-0">&copy; 2024 Nama Anda</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="modal-content bg-white border-4 border-black shadow-neo-lg max-w-2xl w-full p-4 sm:p-6 relative max-h-[90vh] overflow-y-auto">
+            <button id="modal-close-button" class="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 bg-red-500 text-white font-bold border-2 border-black w-8 h-8 sm:w-10 sm:h-10 text-2xl flex items-center justify-center shadow-neo-sm active:shadow-none active:translate-x-0.5 active:translate-y-0.5">&times;</button>
+            <img id="modal-image" src="" alt="Gambar Proyek" class="w-full h-48 sm:h-64 object-cover border-2 border-black mb-4">
+            <h2 id="modal-title" class="text-2xl sm:text-3xl font-bold mb-2"></h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span id="modal-tech-pills" class="flex flex-wrap gap-2"></span>
+            </div>
+            <p id="modal-description" class="text-base text-gray-700"></p>
+        </div>
+    </div>
+    
+    <!-- Blog Modal -->
+    <div id="blog-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="modal-content bg-white border-4 border-black shadow-neo-lg max-w-2xl w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
+            <button id="blog-modal-close-button" class="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 bg-red-500 text-white font-bold border-2 border-black w-8 h-8 sm:w-10 sm:h-10 text-2xl flex items-center justify-center shadow-neo-sm active:shadow-none active:translate-x-0.5 active:translate-y-0.5">&times;</button>
+            <h2 id="blog-modal-title" class="text-2xl sm:text-3xl font-bold mb-2"></h2>
+            <p id="blog-modal-date" class="text-sm text-gray-600 mb-4"></p>
+            <div id="blog-modal-content" class="text-base text-gray-800 leading-relaxed space-y-4"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'neo-sm': '2px 2px 0px #000',
+                        'neo-md': '4px 4px 0px #000',
+                        'neo-lg': '8px 8px 0px #000',
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
