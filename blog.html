@@ -18,7 +18,7 @@
         <header class="flex items-center justify-between p-4 bg-white border-b-4 border-black">
             <a href="/" class="flex items-center space-x-2">
                 <i class="fa-solid fa-code text-2xl"></i>
-                <span class="font-bold text-xl">Nama Anda</span>
+                <span class="font-bold text-xl">Devan Raditya Pratama</span>
             </a>
             <button id="mobile-menu-button" class="md:hidden p-2 text-2xl z-50 border-2 border-black bg-yellow-300 shadow-neo-sm active:shadow-none active:translate-x-0.5 active:translate-y-0.5">
                 <i class="fa-solid fa-bars hamburger-icon"></i>
@@ -48,65 +48,74 @@
             </div>
 
             <!-- Blog Listing Section -->
-            <section id="blog-list" class="mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
-                <h1 class="text-4xl font-bold mb-8 text-center">Wawasan & Blog</h1>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <section id="blog-list" class="fade-in-section mb-12 p-6 sm:p-8 bg-white border-4 border-black shadow-neo-lg">
+                <h1 class="text-4xl font-bold mb-4 text-center">Wawasan & Blog</h1>
+
+                <!-- Filter Buttons -->
+                <div id="blog-filter-buttons" class="flex flex-wrap justify-center gap-2 mb-8">
+                    <button class="filter-btn py-2 px-4 bg-yellow-300 font-bold border-2 border-black shadow-neo-sm hover:bg-yellow-400 transition-transform duration-200 hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5" data-filter="semua">Semua</button>
+                    <button class="filter-btn py-2 px-4 bg-white font-bold border-2 border-black shadow-neo-sm hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5" data-filter="pemasaran">Pemasaran</button>
+                    <button class="filter-btn py-2 px-4 bg-white font-bold border-2 border-black shadow-neo-sm hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5" data-filter="n8n">n8n</button>
+                    <button class="filter-btn py-2 px-4 bg-white font-bold border-2 border-black shadow-neo-sm hover:bg-yellow-200 transition-transform duration-200 hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5" data-filter="seo">SEO</button>
+                </div>
+
+                <div id="blog-card-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Blog Card 1 -->
-                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer" data-category="pemasaran"
                          data-title="Strategi Otomasi Pemasaran 2024"
                          data-date="27 Sep 2024"
                          data-content="Di tahun 2024, otomatisasi pemasaran bukan lagi sekadar mengirim email massal. Ini tentang menciptakan perjalanan pelanggan yang sangat personal dan relevan. Tren utama yang perlu diperhatikan adalah penggunaan AI untuk segmentasi dinamis, di mana pelanggan dikelompokkan berdasarkan perilaku real-time, bukan hanya demografi. Selain itu, otomatisasi omni-channel menjadi standar. Alur kerja Anda harus dapat menjangkau pelanggan melalui email, SMS, notifikasi push, dan bahkan iklan bertarget secara terkoordinasi. Kuncinya adalah memberikan pesan yang tepat, di waktu yang tepat, dan di saluran yang paling disukai pelanggan.">
-                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/fbbf24/1a1a1a?text=Automasi" alt="Thumbnail Blog 1" class="w-full h-full object-cover"></div>
                         <h2 class="font-bold text-lg mb-1 pointer-events-none">Strategi Otomasi Pemasaran 2024</h2>
                         <p class="text-xs text-gray-600 mb-2 pointer-events-none">27 Sep 2024</p>
                         <p class="text-sm text-gray-700 pointer-events-none">Pelajari tren terbaru dalam otomatisasi pemasaran untuk meningkatkan efisiensi.</p>
                     </div>
                     <!-- Blog Card 2 -->
-                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer" data-category="n8n"
                          data-title="Panduan Memulai N8N untuk Pemula"
                          data-date="15 Sep 2024"
                          data-content="N8N (diucapkan 'n-eight-n') adalah alat otomatisasi alur kerja sumber terbuka yang powerful. Untuk memulainya, Anda tidak perlu menjadi seorang programmer. Pertama, pahami tiga konsep inti: Node, Connection, dan Workflow. **Node** adalah blok bangunan (misalnya, 'Baca Google Sheet', 'Kirim Email'). **Connection** adalah bagaimana node-node tersebut dihubungkan. **Workflow** adalah kanvas tempat Anda menyusun node-node ini. Mulailah dengan proyek sederhana: buat alur kerja yang secara otomatis mengirimkan pesan 'Selamat Pagi' ke saluran Slack Anda setiap hari jam 8 pagi. Ini akan mengajarkan Anda dasar-dasar pemicu (trigger) dan tindakan (action) di n8n.">
-                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/fbbf24/1a1a1a?text=n8n+Guide" alt="Thumbnail Blog 2" class="w-full h-full object-cover"></div>
                         <h2 class="font-bold text-lg mb-1 pointer-events-none">Panduan Memulai N8N untuk Pemula</h2>
                         <p class="text-xs text-gray-600 mb-2 pointer-events-none">15 Sep 2024</p>
                         <p class="text-sm text-gray-700 pointer-events-none">Langkah-langkah praktis untuk membangun alur kerja otomatisasi pertama Anda.</p>
                     </div>
                     <!-- Blog Card 3 -->
-                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer" data-category="n8n"
                          data-title="Studi Kasus: Otomatisasi Penjualan"
                          data-date="5 Sep 2024"
                          data-content="Sebuah perusahaan SaaS B2B mengalami kesulitan dalam menindaklanjuti prospek demo dengan cepat, yang menyebabkan tingkat konversi rendah. Solusinya adalah alur kerja n8n yang terintegrasi dengan Calendly, HubSpot, dan Slack. Ketika seorang prospek menjadwalkan demo via Calendly, n8n secara instan membuat kontak baru di HubSpot, memberinya tag 'Demo Dijadwalkan'. Secara bersamaan, notifikasi dikirim ke saluran Slack tim penjualan dengan detail prospek dan tautan ke profil HubSpot mereka. Hasilnya? Waktu respons berkurang dari beberapa jam menjadi beberapa menit, dan tingkat konversi demo-ke-pelanggan meningkat sebesar 30% dalam tiga bulan.">
-                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/fbbf24/1a1a1a?text=Studi+Kasus" alt="Thumbnail Blog 3" class="w-full h-full object-cover"></div>
                         <h2 class="font-bold text-lg mb-1 pointer-events-none">Studi Kasus: Otomatisasi Penjualan</h2>
                         <p class="text-xs text-gray-600 mb-2 pointer-events-none">5 Sep 2024</p>
                         <p class="text-sm text-gray-700 pointer-events-none">Bagaimana otomatisasi n8n dapat meningkatkan konversi dan efisiensi.</p>
                     </div>
                      <!-- Blog Card 4 (New) -->
-                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer" data-category="n8n"
                          data-title="Mengintegrasikan ChatGPT dengan n8n"
                          data-date="28 Agu 2024"
                          data-content="Menggabungkan kekuatan model bahasa besar seperti ChatGPT dengan n8n membuka kemungkinan tak terbatas. Anda dapat membuat alur kerja yang secara otomatis menghasilkan konten, menjawab pertanyaan pelanggan, atau bahkan menulis email. Integrasi ini biasanya dilakukan melalui node HTTP Request di n8n untuk memanggil API OpenAI. Contoh alur kerja: sebuah pemicu (trigger) dari entri baru di database Anda dapat mengirimkan prompt ke ChatGPT untuk membuat deskripsi produk, lalu hasilnya disimpan kembali ke database atau dikirim ke tim pemasaran. Ini menghemat waktu dan memastikan konsistensi dalam pembuatan konten.">
-                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/fbbf24/1a1a1a?text=ChatGPT+n8n" alt="Thumbnail Blog 4" class="w-full h-full object-cover"></div>
                         <h2 class="font-bold text-lg mb-1 pointer-events-none">Mengintegrasikan ChatGPT dengan n8n</h2>
                         <p class="text-xs text-gray-600 mb-2 pointer-events-none">28 Agu 2024</p>
                         <p class="text-sm text-gray-700 pointer-events-none">Cara membuat chatbot cerdas atau sistem pembuatan konten otomatis.</p>
                     </div>
                     <!-- Blog Card 5 (New) -->
-                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer" data-category="n8n"
                          data-title="5 Alur Kerja n8n Paling Berguna"
                          data-date="12 Agu 2024"
                          data-content="Berikut adalah lima alur kerja n8n yang sangat praktis: **1. Sinkronisasi Data:** Secara otomatis menyalin data pelanggan baru dari Stripe ke Google Sheet untuk pencatatan. **2. Laporan Harian:** Menarik data dari Google Analytics dan mengirimkan ringkasan kinerja harian ke email Anda. **3. Notifikasi Prospek:** Memberi tahu tim penjualan di Slack setiap kali formulir kontak di situs web Anda diisi. **4. Manajemen Media Sosial:** Menjadwalkan postingan dari Airtable untuk dipublikasikan secara otomatis ke Twitter dan LinkedIn. **5. Pengingat Otomatis:** Mengirim email pengingat kepada klien tentang tagihan yang akan jatuh tempo berdasarkan data dari database Anda. Masing-masing alur kerja ini dapat menghemat waktu berjam-jam setiap minggunya.">
-                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/fbbf24/1a1a1a?text=n8n+Workflows" alt="Thumbnail Blog 5" class="w-full h-full object-cover"></div>
                         <h2 class="font-bold text-lg mb-1 pointer-events-none">5 Alur Kerja n8n Paling Berguna</h2>
                         <p class="text-xs text-gray-600 mb-2 pointer-events-none">12 Agu 2024</p>
                         <p class="text-sm text-gray-700 pointer-events-none">Otomatisasi praktis yang dapat Anda terapkan hari ini untuk menghemat waktu.</p>
                     </div>
                     <!-- Blog Card 6 (New) -->
-                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+                    <div class="blog-card p-4 bg-gray-100 border-2 border-black transition-transform duration-200 hover:-translate-y-1 cursor-pointer" data-category="seo"
                          data-title="SEO On-Page: Panduan Lengkap"
                          data-date="30 Jul 2024"
                          data-content="SEO on-page adalah fondasi dari setiap strategi pencarian yang sukses. Ini mencakup semua praktik pengoptimalan yang Anda lakukan langsung di situs web Anda. Elemen-elemen utamanya adalah: **1. Riset Kata Kunci:** Menemukan istilah yang dicari audiens Anda. **2. Tag Judul & Deskripsi Meta:** Membuat judul dan deskripsi yang menarik di hasil pencarian. **3. Konten Berkualitas Tinggi:** Menulis artikel yang informatif dan relevan yang menjawab pertanyaan pengguna. **4. Tautan Internal:** Menghubungkan halaman-halaman di situs Anda untuk membantu Google memahami strukturnya. **5. Kecepatan Halaman & Pengalaman Seluler:** Memastikan situs Anda cepat dan mudah digunakan di semua perangkat. Menguasai dasar-dasar ini sangat penting sebelum beralih ke strategi off-page yang lebih kompleks.">
-                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"></div>
+                        <div class="w-full h-40 bg-gray-200 border-2 border-black mb-4 pointer-events-none"><img src="https://placehold.co/600x400/fbbf24/1a1a1a?text=SEO" alt="Thumbnail Blog 6" class="w-full h-full object-cover"></div>
                         <h2 class="font-bold text-lg mb-1 pointer-events-none">SEO On-Page: Panduan Lengkap</h2>
                         <p class="text-xs text-gray-600 mb-2 pointer-events-none">30 Jul 2024</p>
                         <p class="text-sm text-gray-700 pointer-events-none">Praktik terbaik untuk mengoptimalkan halaman Anda agar mendapat peringkat lebih tinggi di Google.</p>
@@ -118,7 +127,7 @@
 
         <!-- Footer -->
         <footer class="p-6 bg-white border-t-4 border-black flex flex-col sm:flex-row items-center justify-between">
-            <p class="text-sm font-bold mb-4 sm:mb-0">&copy; 2024 Nama Anda</p>
+            <p class="text-sm font-bold mb-4 sm:mb-0">&copy; 2024 Devan Raditya Pratama</p>
             <div class="flex space-x-4">
                 <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" class="text-black hover:text-lime-500 text-2xl"><i class="fa-brands fa-instagram"></i></a>
